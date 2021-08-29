@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import { updateStatus } from "../utils/api";
 
-const ResCard = ({ reservations }) => {
+const ResCard = ({ reservation }) => {
   const history = useHistory();
 
   function handleDelete() {
