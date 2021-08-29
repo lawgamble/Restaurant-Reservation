@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { listReservations } from "../utils/api";
+import { listReservations, listTables } from "../utils/api";
+import { previous, next } from "../utils/date-time";
 import ErrorAlert from "../layout/ErrorAlert";
+import useQuery from "../utils/useQuery";
+import ResList from "../reservation/ResList";
+import TableList from "../tables/TableList";
+import { useHistory } from "react-router";
 
 /**
  * Defines the dashboard page.
@@ -11,26 +16,64 @@ import ErrorAlert from "../layout/ErrorAlert";
 function Dashboard({ date }) {
   const [reservations, setReservations] = useState([]);
   const [reservationsError, setReservationsError] = useState(null);
+  const [tables, setTables] = useState([]);
+
+  const history = useHistory();
+  const query = useQuery().get("date");
+
+  if (query) {
+    date = query;
+  }
 
   useEffect(loadDashboard, [date]);
 
   function loadDashboard() {
-    const abortController = new AbortController();
+    const abort = new AbortController();
     setReservationsError(null);
-    listReservations({ date }, abortController.signal)
+    listReservations({ date }, abort.signal)
       .then(setReservations)
       .catch(setReservationsError);
-    return () => abortController.abort();
+    listTables(abort.signal).then(setTables).catch(setReservationsError);
+    return () => abort.abort();
   }
+
+  const handlePreviousDateClick = () => {
+    history.push(`dashboard?date=${previous(date)}`);
+  };
+
+  const handleNextDateClick = () => {
+    history.push(`dashboard?date=${next(date)}`);
+  };
 
   return (
     <main>
       <h1>Dashboard</h1>
-      <div className="d-md-flex mb-3">
-        <h4 className="mb-0">Reservations for date</h4>
+      <div className="input-group mb-3">
+        <div className="input-group-prepend">
+          <button
+            type="button"
+            className="btn btn-primary"
+            data-testid="previous-date"
+            onClick={handlePreviousDateClick}
+          >
+            <span className="oi oi-minus" />
+          </button>
+        </div>
+        <span className="input-group-text">{date}</span>
+        <div className="input-group-prepend">
+          <button
+            type="button"
+            className="btn btn-primary"
+            data-testid="next-date"
+            onClick={handleNextDateClick}
+          >
+            <span className="oi oi-plus" />
+          </button>
+        </div>
       </div>
       <ErrorAlert error={reservationsError} />
-      {JSON.stringify(reservations)}
+      <ResList reservations={reservations} />
+      <TableList tables={tables} />
     </main>
   );
 }

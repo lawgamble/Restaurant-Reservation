@@ -1,6 +1,6 @@
 import React from "react";
 import { finishTable } from "../utils/api";
-import classNames from "../utils/class-names";
+import dynamicClassName from "../utils/dynamic-class-name";
 import { useHistory } from "react-router-dom";
 
 const TableList = ({ tables }) => {
@@ -23,7 +23,7 @@ const TableList = ({ tables }) => {
   const tableRows = tables.map((table) => (
     <div
       key={table.table_id}
-      className={classNames({
+      className={dynamicClassName({
         card: true,
         "bg-secondary": table.reservation_id,
         "bg-success": !table.reservation_id,
