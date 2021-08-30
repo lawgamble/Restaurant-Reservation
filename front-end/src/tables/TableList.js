@@ -3,6 +3,8 @@ import { finishTable } from "../utils/api";
 import dynamicClassName from "../utils/dynamic-class-name";
 import { useHistory } from "react-router-dom";
 
+import "./TableList.css";
+
 const TableList = ({ tables }) => {
   const history = useHistory();
 

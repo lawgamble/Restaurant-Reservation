@@ -52,7 +52,7 @@ function Dashboard({ date }) {
         <div className="input-group-prepend">
           <button
             type="button"
-            className="btn btn-primary"
+            className="btn"
             data-testid="previous-date"
             onClick={handlePreviousDateClick}
           >
@@ -63,7 +63,7 @@ function Dashboard({ date }) {
         <div className="input-group-prepend">
           <button
             type="button"
-            className="btn btn-primary"
+            className="btn"
             data-testid="next-date"
             onClick={handleNextDateClick}
           >

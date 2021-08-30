@@ -1,4 +1,4 @@
 .side-bar {
-  background-color: #393a44;
+  background-image: linear-gradient(to right, rgb(0, 0, 0) , rgb(122, 122, 122));
   min-width: 200px;
 }
