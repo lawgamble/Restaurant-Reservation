@@ -5,25 +5,25 @@ A restaurant table reservation and seating application that allows an employee t
 
 
 # H3 Dashboard
-![Dashboard](/screenshots/Res Dash.PNG)
+![Dashboard](/screenshots/Res Dash.PNG?raw=true)
 The dashboard allows you to view the current tables and their status. It will also display all reservations (depending on date).
 
-![Alt text](./screenshots/Res Dash.PNG "Dashboard")
+
 
 # H3 Create Tables
-![Create-Table](/screenshots/Res Create Table.PNG)
+![Create-Table](/screenshots/Res Create Table.PNG?raw=true)
 Allows user to create new tables and add available capacity to new tables.
-![Alt text](./screenshots/Res Create Table.PNG "Create Table")
+
 
 # H3 Create Reservation 
-![Create-Reservation](/screenshots/Res Create Res.PNG)
+![Create-Reservation](/screenshots/Res Create Res.PNG?raw=true)
 Allows user to create a brand new reservation for present and future times.
-![Alt text](./screenshots/Res Create Res.PNG "Create Reservation")
+
 
 # H3 Search for reservation
-![Search](/screenshots/Ress Search.PNG)
+![Search](/screenshots/Ress Search.PNG?raw=true)
 User is able to look up any reservation stored in the database by reservation phone number.
-![Alt text](./screenshots/Ress Search.PNG "Search")
+
 
 # H2 Stack/Tech
 --------------------------------------------------------
