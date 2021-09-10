@@ -2,12 +2,14 @@
 
 A restaurant table reservation and seating application that allows an employee to take reservations at appropraite times and seat guests at the perfect table.
 
+[Live Application](https://restaurant-reservation-lg.herokuapp.com/dashboard)
 
 
 # H3 Dashboard
 ![Dashboard](https://raw.githubusercontent.com/lawgamble/Restaurant-Reservation/main/screenshots/Res%20Dash.PNG)
 -------------
 The dashboard allows you to view the current tables and their status. It will also display all reservations (depending on date).
+
 
 
 
