@@ -6,22 +6,26 @@ A restaurant table reservation and seating application that allows an employee t
 
 # H3 Dashboard
 ![Dashboard](https://raw.githubusercontent.com/lawgamble/Restaurant-Reservation/main/screenshots/Res%20Dash.PNG)
+-------------
 The dashboard allows you to view the current tables and their status. It will also display all reservations (depending on date).
 
 
 
 # H3 Create Tables
-![Create-Table](/screenshots/Res Create Table.PNG?raw=true)
+![Create-Table](https://raw.githubusercontent.com/lawgamble/Restaurant-Reservation/main/screenshots/Res%20Create%20Table.PNG)
+-------------
 Allows user to create new tables and add available capacity to new tables.
 
 
 # H3 Create Reservation 
-![Create-Reservation](/screenshots/Res Create Res.PNG?raw=true)
+![Create-Reservation](https://raw.githubusercontent.com/lawgamble/Restaurant-Reservation/main/screenshots/Res%20Create%20Res.PNG)
+-------------
 Allows user to create a brand new reservation for present and future times.
 
 
 # H3 Search for reservation
-![Search](/screenshots/Ress Search.PNG?raw=true)
+![Search](https://raw.githubusercontent.com/lawgamble/Restaurant-Reservation/main/screenshots/Ress%20Search.PNG)
+-------------
 User is able to look up any reservation stored in the database by reservation phone number.
 
 
