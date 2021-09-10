@@ -5,7 +5,7 @@ A restaurant table reservation and seating application that allows an employee t
 
 
 # H3 Dashboard
-![Dashboard](/screenshots/Res Dash.PNG?raw=true)
+![Dashboard](https://raw.githubusercontent.com/lawgamble/Restaurant-Reservation/main/screenshots/Res%20Dash.PNG)
 The dashboard allows you to view the current tables and their status. It will also display all reservations (depending on date).
 
 
