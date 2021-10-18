@@ -2,7 +2,7 @@
 
 A restaurant table reservation and seating application that allows an employee to take reservations at appropraite times and seat guests at the perfect table.
 
-[Live Application](https://restaurant-reservation-lg.herokuapp.com/dashboard)
+[Live Application](https://restaurant-reservation-clien.herokuapp.com/dashboard)
 
 
 # H3 Dashboard
