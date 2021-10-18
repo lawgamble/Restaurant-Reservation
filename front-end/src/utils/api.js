@@ -124,6 +124,7 @@ export async function createTable(table, signal) {
 export async function listTables(signal) {
   const url = `${API_BASE_URL}/tables`;
   const options = {
+    mode: "no-cors",
     headers,
     signal,
   };
